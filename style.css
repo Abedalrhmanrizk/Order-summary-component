@@ -73,9 +73,20 @@ html {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  background-image: url(./images/pattern-background-mobile.svg);
   background-color: var(--Pale-blue);
+}
+.bg-image {
+  background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 427.33px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 main {
@@ -186,10 +197,12 @@ main .description {
 }
 
 @media (min-width: 400px) {
+  .bg-image {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
   main {
     max-width: 450px;
-    margin: 10.2rem auto 10.1rem;
-    max-height: 697px;
+    margin: 10.2rem auto auto;
   }
   .text-box {
     padding: 4.5rem 4.8rem;
@@ -197,6 +210,7 @@ main .description {
   main h1 {
     font-size: 2.8rem;
     margin-bottom: 1.7rem;
+    font-weight: 900;
   }
   .text-box .description {
     padding: 0 2.5rem;
@@ -219,6 +233,7 @@ main .description {
 
   .price a {
     font-size: 1.4rem;
+    font-weight: 700;
   }
 
   .link a:first-child {
