@@ -202,7 +202,8 @@ main .description {
   }
   main {
     max-width: 450px;
-    margin: 10.2rem auto auto;
+margin:auto;
+    margin-top: 10.2rem;
   }
   .text-box {
     padding: 4.5rem 4.8rem;
